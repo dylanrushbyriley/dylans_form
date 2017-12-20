@@ -29,11 +29,6 @@ class ContributeForm extends FormBase {
       '#title' => t('Your Name'),
       '#required' => TRUE,
     );
-    $form['city'] = array(
-      '#type' => 'textfield',
-      '#title' => t('What city do you live in?'),
-      '#required' => TRUE,
-    );
     $form['video'] = array(
       '#type' => 'textfield',
       '#title' => t('Your Favorite YouTube Video'),
