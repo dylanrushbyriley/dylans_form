@@ -1,0 +1,6 @@
+name: Dylans Form
+type: module
+description: 'Custom Form Module for Drupal 8'
+package: Custom
+core: 8.x
+hidden: false

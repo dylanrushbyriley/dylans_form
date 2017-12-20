@@ -1,0 +1,38 @@
+dylans_form_contribute:
+  path: 'dylans-form/contribute'
+  defaults:
+    _form: '\Drupal\dylans_form\Form\ContributeForm'
+    _title: 'Dylan's Form'
+  requirements:
+    _permission: 'access content'
+
+dylans_form_list:
+  path: '/admin/content/dylans_form'
+  defaults:
+    _controller: '\Drupal\dylans_form\src\Forms\ContributeForm.php'
+  requirements:
+    _permission: 'manage dylans_form forms'
+
+dylans_form_add:
+  path: '/admin/content/dylans_form/add'
+  defaults:
+    _form: '\Drupal\dylans_form\AddForm'
+    _title: 'Create contact'
+  requirements:
+    _permission: 'use dylans_form form'
+
+dylans_form_edit:
+  path: 'admin/content/dylans_form/edit/{id}'
+  defaults:
+    _form: '\Drupal\dylans_form\AddForm'
+    _title: 'Edit contact'
+  requirements:
+    _permission: 'use dylans_form form'
+
+dylans_form_delete:
+  path: '/admin/content/dylans_form/delete/{id}'
+  defaults:
+    _form: 'Drupal\dylans_form\DeleteForm'
+    _title: 'Delete contact'
+  requirements:
+    _permission: 'manage dylans_form forms'
