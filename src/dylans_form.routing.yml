@@ -1,7 +1,0 @@
-dylans_form_contribute:
-  path: 'dylans-form/contribute'
-  defaults:
-    _form: '\Drupal\dylans_form\Form\ContributeForm'
-    _title: 'Contribute page'
-  requirements:
-    _permission: 'access content'
